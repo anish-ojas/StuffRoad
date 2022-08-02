@@ -1,1 +1,174 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+@import "primeflex/primeflex.css";
+@import "primeng/resources/primeng.min.css";
+@import "primeicons/primeicons.css";
+@import "assets/css/app/layout.scss";
+@import "assets/css/demo/flags.css";
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
+@import "./assets/variable.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.productSlider {}
+
+.productsTabView {
+    .subCategories {
+        padding: 1em 0;
+        width: clamp(75%, 600px, 100%);
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+    .btnSwiper {
+        height: auto !important;
+        .p-button {
+            width: calc(100% - 5%) !important;
+        }
+    }
+    .tabView {
+        .p-tabview {
+            .p-tabview-nav-container {
+                .p-tabview-nav {
+                    @extend .flex-center;
+                    background: transparent !important;
+                    .p-tabview-nav-link {
+                        box-shadow: none !important;
+                        font-size: 0.8em;
+                        background: transparent !important;
+                    }
+                }
+            }
+            .p-tabview-panels {
+                background: transparent !important;
+            }
+            .mySwiper {
+                height: 260px !important;
+                .surface-ground {
+                    border-right: 1px solid #d8d8d8 !important;
+                }
+                .swiper-pagination {
+                    display: none;
+                }
+            }
+        }
+        .card-view {
+            img {
+                width: 60% !important;
+            }
+            .surface-card {
+                background: transparent !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+// Discount Section
+.discountSection {
+    background-color: #f5f5f5;
+    .discountBox {
+        background-color: #ffffff;
+        padding: 20px;
+        h2 {
+            font-size: 18px;
+            margin: 0 0 16px;
+        }
+        .contentContainer {
+            @extend .flex-center-between;
+            flex-wrap: wrap;
+            .content {
+                flex: 0 calc(50% - 5%);
+                .imgBox {
+                    overflow: hidden;
+                    img {
+                        max-width: 100%;
+                        transition: 0.6s;
+                    }
+                    &:hover img {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// latestLaunch
+.latestLaunch {
+    .heading {
+        h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: $blue;
+            }
+        }
+    }
+    .box {
+        position: relative;
+        .imgBox {}
+        .txtBox {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            h2 {
+                color: $white;
+                margin-bottom: 10px;
+            }
+            button {
+                border: none;
+                background: $black;
+                color: white;
+                border: 1px solid $white;
+                font-size: 0.8em;
+                padding: 10px 25px;
+                cursor: pointer;
+                transition: 0.3s;
+                transition-property: background, transform;
+                &:hover {
+                    color: $black;
+                    background: $white;
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+    .swiper{
+        height:auto !important;
+    }
+}

@@ -3,14 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HeaderComponent } from './components/header/header.component';
+import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
+import { InputTextModule } from 'primeng/inputtext';
+import { BadgeModule } from 'primeng/badge';
+import { StyleClassModule } from 'primeng/styleclass';
+import { ProductSliderComponent } from './pages/product-slider/product-slider.component';
+import { SwiperModule } from 'swiper/angular';
+import {TabViewModule} from 'primeng/tabview';
+import {AvatarModule} from 'primeng/avatar';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ProductSliderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    RippleModule,
+    InputTextModule,
+    BadgeModule,
+    StyleClassModule,
+    SwiperModule,
+    TabViewModule,
+    AvatarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

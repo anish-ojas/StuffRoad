@@ -1,0 +1,73 @@
+<div class="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-gray-800" style="min-height: 84px">
+    <div class="logo">
+        <img src="../../../assets/logo.webp" alt="Image" height="40" class="mr-0 lg:mr-6">
+    </div>
+    <div class="flex px-6 p-3 lg:px-3 lg:py-2 flex-grow-1">
+        <span class="p-input-icon-left w-full">
+      <i class="pi pi-search text-gray-400"></i>
+      <input type="text" pInputText placeholder="Search" class="bg-gray-800 text-gray-400 border-gray-800 w-full" />
+    </span>
+    </div>
+    <a pRipple class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+
+    <div class="align-items-center justify-content-between hidden lg:flex absolute lg:static w-full lg:w-auto bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none border-1 lg:border-none border-gray-800 z-5">
+        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
+            <li>
+                <p-button label="Login"></p-button>
+            </li>
+            <li>
+                <a pRipple class="flex align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden"
+                    leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <button pButton pRipple type="button" iconPos="right" icon="pi pi-angle-down" label="More" class="p-button-text"></button>
+                </a>
+                <ul class="list-none py-3 px-6 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:absolute bg-gray-900 hidden origin-top w-full lg:w-15rem cursor-pointer lg:border-1 border-gray-800">
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150">
+                            <i class="pi pi-user-plus mr-2"></i>
+                            <span class="font-medium">Add New</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout"
+                            [hideOnOutsideClick]="true">
+                            <i class="pi pi-search mr-2"></i>
+                            <span class="font-medium">Search</span>
+                            <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
+                        </a>
+                        <ul class="list-none py-3 pl-3 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:absolute bg-gray-900 hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0 lg:border-1 border-gray-800">
+                            <li>
+                                <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150">
+                                    <i class="pi pi-shopping-cart mr-2"></i>
+                                    <span class="font-medium">Purchases</span>
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150">
+                                    <i class="pi pi-comments mr-2"></i>
+                                    <span class="font-medium">Messages</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a pRipple class="flex align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <button pButton pRipple type="button" icon="pi pi-shopping-cart" label="Cart" class="p-button-text"></button>
+                </a>
+            </li>
+        </ul>
+        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
+            <li class="border-top-1 border-gray-800 lg:border-top-none">
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <div class="block lg:hidden">
+                        <div class="text-white font-medium">Josephine Lillard</div>
+                        <span class="text-gray-400 font-medium text-sm">Marketing Specialist</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
