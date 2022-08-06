@@ -13,11 +13,15 @@ import { ProductSliderComponent } from './pages/product-slider/product-slider.co
 import { SwiperModule } from 'swiper/angular';
 import {TabViewModule} from 'primeng/tabview';
 import {AvatarModule} from 'primeng/avatar';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProductComponent } from './pages/product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductSliderComponent
+    ProductSliderComponent,
+    FooterComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
