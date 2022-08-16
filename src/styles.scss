@@ -37,6 +37,18 @@ img {
     width: 100px;
     cursor: pointer;
 }
+.header{
+    background:#00abc5 !important;
+    .p-inputtext{
+      background:white !important;
+    }
+    .btns{
+      background:#00abc5 !important;
+      button{
+        color:white !important;
+      }
+    }
+}
 
 .productSlider {}
 
@@ -249,18 +261,127 @@ footer{
 
 .product{
   display: flex;
-  .alternatesImgs{
-    ul{
-      list-style:none;
-      li{
-        width:50px;
-        height:50px;
-        margin:10px 0;
+  .rating{
+    background:$ratingColor;
+    color:$white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .offPrice{
+    color:$ratingColor;
+  }
+  .availableOffers{
+    list-style: none;
+  }
+  .viewMore{
+    color:$blue;
+  }
+  .commonSection{
+    margin-bottom: 10px;
+    .leftSection{
+      width:10%;
+    }
+    .rightSection{
+      width: 70%;
+    }
+  }
+  .delivery{
+    @extend .flex;
+    gap:20px;
+    @extend .commonSection;
+    .leftSection{
+
+    }
+    .rightSection{
+      width:40%;
+      .deliveryPincode{
+        border-bottom:1px solid #333;
+        @extend .flex;
+        input{
+          outline:none;
+          border:none;
+          background:transparent;
+        }
+      }
+      span{
+        display: block;
+        &:nth-child(1){
+          font-size: 1em;
+          font-weight: bold;
+        }
+        &:nth-child(2){
+          font-size: 0.8em;
+        }
       }
     }
   }
-  .productImg{
-    width:60%;
-    height:600px;
+  .color{
+    @extend .flex;
+    gap:20px;
+    @extend .commonSection;
+  }
+  .designedFor{
+    @extend .flex;
+    gap:20px;
+    @extend .commonSection;
+    .rightSection{
+      @extend .flex;
+      gap:10px;
+    }
+  }
+  .thicknessSize{
+    @extend .flex-between;
+    .thickness{
+      @extend .flex;
+      gap:20px;
+      width:45%;
+      .leftSection{
+        width: 10%;
+      }
+      .rightSection{
+        width: 70%;
+      }
+    }
+    .size{
+      @extend .flex;
+      gap:20px;
+      width:45%;
+      .leftSection{
+        width: 10%;
+      }
+      .rightSection{
+        width: 70%;
+      }
+    }
+  }
+  .highlightsServices{
+    @extend .flex-between;
+
+    .highlight{
+      @extend .flex;
+      gap:20px;
+      width:45%;
+    }
+    .service{
+      @extend .flex;
+      gap:20px;
+      width:45%;
+      .rightSection{
+        ul{
+          list-style: none;
+          li{
+            @extend .flex;
+            gap:10px;
+          }
+        }
+      }
+    }
+  }
+  .orderSample{
+    button{
+      padding: 10px;
+      border:1px solid #333;
+      border-radius:5px;
+    }
   }
 }
