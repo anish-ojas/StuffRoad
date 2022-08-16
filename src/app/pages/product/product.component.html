@@ -1,29 +1,217 @@
 <section>
   <div class="product">
-    <div class="alternatesImgs">
-        <ul>
-          <li>
-            <img src="https://rukminim1.flixcart.com/image/128/128/kbwjvrk0/watch/q/r/p/wn03139-wanton-original-imaft5n6ugzgmezt.jpeg?q=70" alt="productImg"/>
-          </li>
-          <li>
-            <img src="https://rukminim1.flixcart.com/image/128/128/kbwjvrk0/watch/q/r/p/wn03139-wanton-original-imaft5n6ugzgmezt.jpeg?q=70" alt="productImg"/>
-          </li>
-          <li>
-            <img src="https://rukminim1.flixcart.com/image/128/128/kbwjvrk0/watch/q/r/p/wn03139-wanton-original-imaft5n6ugzgmezt.jpeg?q=70" alt="productImg"/>
-          </li>
-          <li>
-            <img src="https://rukminim1.flixcart.com/image/128/128/kbwjvrk0/watch/q/r/p/wn03139-wanton-original-imaft5n6ugzgmezt.jpeg?q=70" alt="productImg"/>
-          </li>
+    <div class="grid p-2">
+      <div class="col-12 lg:col-5">
+        <div class="flex">
+          <div class="flex flex-column w-2 justify-content-between">
+            <img *ngFor="let image of images2; let i = index" src="../../../assets/productoverview/{{image}}"
+              class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150"
+              [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i" />
+          </div>
+          <div class="pl-3 w-10">
+            <img attr.src="../../../assets/productoverview/{{images2[selectedImageIndex2]}}" class="w-full" />
+          </div>
+        </div>
+      </div>
+      <div class="col-12 lg:col-7 py-5 lg:py-3 lg:pl-5">
+        <ol class="flex list-none m-0 pt-0 px-0 pb-3 align-items-center text-sm text-600 mb-3 overflow-x-auto">
+          <li class="mr-2">Category</li>
+          <li class="mr-2 inline-flex align-items-center"><i class="pi pi-angle-right text-sm"></i></li>
+          <li class="mr-2">Category</li>
+          <li class="mr-2 inline-flex align-items-center"><i class="pi pi-angle-right text-sm"></i></li>
+          <li class="mr-2 inline-flex align-items-center">Category</li>
+          <li class="mr-2"><i class="pi pi-angle-right text-sm"></i></li>
+          <li>Category</li>
+        </ol>
+        <div class="flex align-items-center justify-content-between mb-4">
+          <span class="text-xl font-medium text-900">Product Title Placeholder</span>
+        </div>
+        <div class="flex align-items-center justify-content-between lg:justify-content-start mb-5 gap-2">
+          <span class="inline-flex align-items-center rating">
+            <i class="pi pi-star-fill mr-2"></i>
+            <span class="font-bold">5.0</span>
+          </span>
+          <span class="text-500"><strong>1,689 </strong> Ratings &
+            <strong>120 </strong> Reviews</span>
+        </div>
+        <div class="flex align-items-start flex-column mb-4">
+          <span class="offPrice">Extra ₹5000 off</span>
+          <div class="flex align-items-center gap-3">
+            <span class="text-xl font-medium text-900">$123</span>
+            <span class="flex align-items-center gap-2">
+              <del>22,999</del>
+              <span class="offPrice">21% off</span>
+            </span>
+            <span class="info">
+              <i class="ri-information-line"></i>
+            </span>
+          </div>
+        </div>
+        <div class="text-content">
+          <h4>Available offers</h4>
+          <ul class="availableOffers">
+            <li>
+              <i class="ri-price-tag-3-fill"></i>
+
+              Bank Offer ₹750 Instant Discount on HDFC Bank Credit and Debit Card Transactions <a>T&C</a>
+
+            </li>
+            <li>
+              <i class="ri-price-tag-3-fill"></i>
+
+              Bank Offer10% off on ICICI Bank Credit Cards (incl. EMI Txns), up to ₹750. On orders of ₹5,000 and above
+              <a>T&C</a>
+
+            </li>
+            <li>
+              <i class="ri-price-tag-3-fill"></i>
+
+              Bank Offer10% off on Kotak Bank Credit Cards (incl. EMI Txns), up to ₹1,000. On orders of ₹5,000 and above
+              <a>T&C</a>
+
+            </li>
+            <li>
+              <i class="ri-price-tag-3-fill"></i>
+
+              Special PriceGet extra ₹5000 off (price inclusive of cashback/coupon) <a>T&C</a>
+
+            </li>
+
+            <span class="viewMore">View 9 more offers</span>
+
+          </ul>
+
+        </div>
+
+        <div class="delivery">
+          <div class="leftSection">
+            <span>Delivery</span>
+          </div>
+          <div class="rightSection">
+            <div class="deliveryPincode">
+              <i class="ri-map-pin-2-fill"></i>
+              <input type="text" placeholder="Enter Delivery Pincode">
+              <span>Check</span>
+            </div>
+            <div class="text">
+              <span>Usually delivered in 3 days <i class="ri-question-line"></i></span>
+              <span>Enter pincode for exact delivery dates/charges</span>
+              <span class="viewMore">View Details</span>
+            </div>
+
+          </div>
 
 
-        </ul>
+        </div>
+        <div class="color">
+          <div class="leftSection">
+            <span>Color</span>
+          </div>
+          <div class="rightSection">
+            <div class="flex flex-row w-2 justify-content-between">
+              <img *ngFor="let image of images2; let i = index" src="../../../assets/productoverview/{{image}}"
+                class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150"
+                [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i" />
+            </div>
+          </div>
+        </div>
+        <div class="designedFor">
+          <div class="leftSection">
+            <span>Designed For</span>
+          </div>
+          <div class="rightSection">
+            <button pButton pRipple type="button" label="Door" class="p-button-outlined"></button>
+            <button pButton pRipple type="button" label="Long Door" class="p-button-outlined"></button>
+            <button pButton pRipple type="button" label="Window" class="p-button-outlined"></button>
+          </div>
+        </div>
+        <div class="thicknessSize">
+          <div class="thickness">
+            <div class="leftSection">
+              <span>Thickness</span>
+            </div>
+            <div class="rightSection">
+              <button pButton pRipple type="button" label="6 mm" class="p-button-outlined p-button-secondary p-button-sm"></button>
+              <button pButton pRipple type="button" label="8 mm" class="p-button-outlined p-button-secondary p-button-sm"></button>
+              <button pButton pRipple type="button" label="12 mm" class="p-button-outlined p-button-secondary p-button-sm"></button>
+              <button pButton pRipple type="button" label="15 mm" class="p-button-outlined p-button-secondary p-button-sm"></button>
+              <button pButton pRipple type="button" label="18 mm" class="p-button-outlined p-button-secondary p-button-sm"></button>
+            </div>
+          </div>
+          <div class="size">
+            <div class="leftSection">
+              <span>Size</span>
+            </div>
+            <div class="rightSection">
+              <button pButton pRipple type="button" label="7.0 ft x 4.0 ft" class="p-button-outlined p-button-secondary p-button-sm"></button>
+              <button pButton pRipple type="button" label="8.0 ft x 4.0 ft" class="p-button-outlined p-button-secondary p-button-sm"></button>
+            </div>
+          </div>
+        </div>
+        <div class="highlightsServices">
+          <div class="highlight">
+            <div class="leftSection">
+              <span>Hightlights</span>
+            </div>
+            <div class="rightSection">
+              <ul>
+                <li>
+                  Bend Resistant
+                </li>
+                <li>
+                  MR Grade
+                </li>
+                <li>
+                  IS:303
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service">
+            <div class="leftSection">
+              <span>Services</span>
+            </div>
+            <div class="rightSection">
+              <ul>
+                <li>
+                  <div class="icon">
+                  <i class="ri-shield-check-fill"></i>
+                </div>
+                  <span>5 years warranty against Borer and Termite</span>
+                </li>
+                <li>
+                  <div class="icon">
+                  <i class="ri-refresh-line"></i>
+                </div>
+                  <span>10 Days Replacement Policy <i class="ri-question-line"></i></span>
+                </li>
+              </ul>
 
-    </div>
-    <div class="productImg">
-      <img src="https://rukminim1.flixcart.com/image/128/128/kbwjvrk0/watch/q/r/p/wn03139-wanton-original-imaft5n6ugzgmezt.jpeg?q=70" alt=""/>
-    </div>
-    <div class="productInfo">
-
+              </div>
+          </div>
+        </div>
+        <div class="orderSample">
+          <button>Order a Sample</button>
+        </div>
+        <div class="table">
+          <p-table [value]="products" styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>Discounted price</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>{{product.quantity}}</td>
+                    <td>{{product.discount}}</td>
+                    <td>{{product.discountedPirce}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+        </div>
+      </div>
     </div>
   </div>
 </section>

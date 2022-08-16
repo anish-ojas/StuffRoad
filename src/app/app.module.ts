@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,13 +15,22 @@ import {TabViewModule} from 'primeng/tabview';
 import {AvatarModule} from 'primeng/avatar';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductComponent } from './pages/product/product.component';
+import {TableModule} from 'primeng/table';
+import { SearchComponent } from './pages/search/search.component';
+import {DividerModule} from 'primeng/divider';
+import {AccordionModule} from 'primeng/accordion';
+import {CheckboxModule} from 'primeng/checkbox';
+import { FormsModule } from '@angular/forms';
+import {GalleriaModule} from 'primeng/galleria';
+import {SliderModule} from 'primeng/slider';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProductSliderComponent,
     FooterComponent,
-    ProductComponent
+    ProductComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +42,15 @@ import { ProductComponent } from './pages/product/product.component';
     StyleClassModule,
     SwiperModule,
     TabViewModule,
-    AvatarModule
+    AvatarModule,
+    TableModule,
+    BrowserAnimationsModule,
+    DividerModule,
+    AccordionModule,
+    CheckboxModule,
+    FormsModule,
+    GalleriaModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
