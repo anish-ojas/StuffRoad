@@ -1,8 +1,5 @@
 
-<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-    <div class="text-900 font-bold text-3xl text-center">Category Title</div>
-    <p class="text-600 font-normal text-xl text-center">Nullam faucibus, sem et bibendum finibus, sapien ipsum congue felis, sit amet pretium ex nisl ut eros.</p>
-    <p-divider class="w-full"></p-divider>
+<div class="surface-section p-4">
     <div class="flex flex-wrap lg:flex-nowrap">
         <div class="col-fixed lg:col-2 mr-4 flex p-0 flex-column w-full lg:w-3">
             <div class="flex flex-column p-0">
@@ -121,6 +118,133 @@
                 </p-accordionTab>
             </p-accordion>
         </div>
-        <div class="w-full border-2 border-dashed surface-border surface-section mt-3 lg:mt-0" style="min-height:25rem;"></div>
+        <div class="w-full surface-border surface-section mt-3 lg:mt-0" style="min-height:25rem;">
+
+
+          <div class="surface-section">
+            <div class="flex justify-content-between flex-wrap">
+                <div class="flex align-items-center mb-3 md:mb-0">
+                    <div class="text-900 font-bold text-3xl">Category Title </div>
+                    <p-badge [value]="'76'" styleClass="ml-3 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
+                </div>
+                <div>
+                    <button type="button" pButton icon="pi pi-sort-alt" class="text-400 surface-section border-1 surface-border hover:text-0 w-7rem p-2 transition-duration-150"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
+                    <p-menu #menu [popup]="true" [model]="items"></p-menu>
+                </div>
+
+            </div>
+            <p class="text-600 text-xl">Nullam faucibus, sem et bibendum finibus, sapien ipsum congue felis, sit amet pretium ex nisl ut eros.</p>
+            <p-divider class="w-full"></p-divider>
+            <div class="grid grid-nogutter align-items-center">
+                <p-multiSelect [options]="brands" [(ngModel)]="selectedBrands2" placeholder="Brand" optionLabel="name" styleClass="w-full" class="flex-auto lg:flex-1 mb-3 lg:mt-0 w-full mr-0 lg:mr-4 text-900"></p-multiSelect>
+                <p-multiSelect [options]="colors" [(ngModel)]="selectedColors" placeholder="Color" optionLabel="name" styleClass="w-full" class="flex-auto lg:flex-1 mb-3 lg:mt-0 w-full mr-0 lg:mr-4 text-900">
+                    <ng-template let-value pTemplate="selectedColors">
+                        <div *ngFor="let color of selectedColors">
+                            <div class="w-3rem h-3rem border-circle cursor-pointer border-none"></div>
+                            <div>{{color.name}}</div>
+                        </div>
+                        <div *ngIf="!selectedColors || selectedColors.length === 0">Color</div>
+                    </ng-template>
+                    <ng-template let-color pTemplate="item">
+                        <div class="flex align-items-center">
+                            <div class="w-2rem h-2rem border-circle {{color.class}} cursor-pointer border-none"></div>
+                            <div class="text-900 ml-2">{{color.name}}</div>
+                        </div>
+                    </ng-template>
+                </p-multiSelect>
+                <p-multiSelect [options]="price" [(ngModel)]="selectedPrice2" placeholder="Price" optionLabel="range" styleClass="w-full" class="flex-auto lg:flex-1 mb-3 lg:mt-0 lg:col w-full mr-0 lg:mr-4 text-900"></p-multiSelect>
+                <!-- <p-toggleButton [(ngModel)]="checked1"  onLabel="Sustainable" offLabel="Unsustainable" onIcon="pi pi-check" offIcon="pi pi-times" styleClass="mb-3 lg:mt-0 mr-4 flex-shrink-0 w-12rem" ></p-toggleButton> -->
+                <!-- <p-toggleButton [(ngModel)]="checked2"  onLabel="Sale" offLabel="Not Sale" onIcon="pi pi-check" offIcon="pi pi-times" styleClass="mb-3 lg:mt-0 mr-4 flex-shrink-0 w-9rem" ></p-toggleButton> -->
+                <a pRipple tabindex="0" class="cursor-pointer flex align-items-center mb-3 lg:mt-0 text-900">Clear All</a>
+                <div class="col-12 border-2 border-dashed surface-border surface-section h-30rem mt-2">
+
+
+
+
+<div class="surface-section">
+  <div class="grid -mt-3 -ml-3 -mr-3">
+      <div class="col-12 md:col-6 lg:col-4 xl:col-3 border-bottom-1 surface-border md:border-bottom-none">
+          <div class="p-2">
+              <img src="https://www.stuffroad.com/wp-content/uploads/2021/09/2157-T39603857-100x100.jpg" class="w-full mb-3" />
+              <div class="text-900 text-xl font-medium mb-2">$140.00</div>
+              <div class="mb-2">
+                  <span class="text-600 line-through">$175.00</span>
+                  <span class="ml-2 text-pink-500 font-medium">%25</span>
+              </div>
+              <span class="text-900">Product Name</span>
+          </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4 xl:col-3 border-bottom-1 surface-border md:border-bottom-none">
+          <div class="p-2">
+              <img src="https://www.stuffroad.com/wp-content/uploads/2021/09/2155-T39602149-100x100.jpg" class="w-full mb-3" />
+              <div class="text-900 text-xl font-medium mb-2">$100.00</div>
+              <div class="mb-2">
+                  <span class="text-600 line-through">$150.00</span>
+                  <span class="ml-2 text-pink-500 font-medium">%50</span>
+              </div>
+              <span class="text-900">Product Name</span>
+          </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4 xl:col-3 border-bottom-1 surface-border md:border-bottom-none">
+          <div class="p-2">
+              <img src="https://www.stuffroad.com/wp-content/uploads/2021/07/Granos-Verde-120x240cm-100x100.png" class="w-full mb-3" />
+              <div class="text-900 text-xl font-medium mb-2">$90.00</div>
+              <div class="mb-2">
+                  <span class="text-600 line-through">$103.00</span>
+                  <span class="ml-2 text-pink-500 font-medium">%15</span>
+              </div>
+              <span class="text-900">Product Name</span>
+          </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4 xl:col-3 border-bottom-1 surface-border md:border-bottom-none">
+          <div class="p-2">
+              <img src="https://www.stuffroad.com/wp-content/uploads/2021/07/Granos-Cemento-120x240cm-100x100.png" class="w-full mb-3" />
+              <div class="text-900 text-xl font-medium mb-2">$50.00</div>
+              <div class="mb-2">
+                  <span class="text-600 line-through">$57.00</span>
+                  <span class="ml-2 text-pink-500 font-medium">%15</span>
+              </div>
+              <span class="text-900">Product Name</span>
+          </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4 xl:col-3 border-bottom-1 surface-border md:border-bottom-none">
+          <div class="p-2">
+              <img src="https://www.stuffroad.com/wp-content/uploads/2022/04/2-4-100x100.jpg" class="w-full mb-3" />
+              <div class="text-900 text-xl font-medium mb-2">$42.00</div>
+              <div class="mb-2">
+                  <span class="text-600 line-through">$54.00</span>
+                  <span class="ml-2 text-pink-500 font-medium">%30</span>
+              </div>
+              <span class="text-900">Product Name</span>
+          </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4 xl:col-3">
+          <div class="p-2">
+              <img src="https://www.stuffroad.com/wp-content/uploads/2022/04/6-5-100x100.jpg" class="w-full mb-3" />
+              <div class="text-900 text-xl font-medium mb-2">$25.00</div>
+              <div class="mb-2">
+                  <span class="text-600 line-through">$50.00</span>
+                  <span class="ml-2 text-pink-500 font-medium">%50</span>
+              </div>
+              <span class="text-900">Product Name</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
     </div>
   </div>
