@@ -1,0 +1,66 @@
+<section id="loginSignUp">
+  <div class="loginSignUp px-5 py-2">
+    <div class="grid">
+      <div class="col-12">
+        <ol class="flex list-none m-0 pt-0 px-0 pb-3 align-items-center text-sm text-600 mb-3 overflow-x-auto">
+          <li class="mr-2">Home</li>
+          <li class="mr-2 inline-flex align-items-center"><i class="pi pi-angle-right text-sm"></i></li>
+          <li class="mr-2">My Account</li>
+      </ol>
+      </div>
+      <div class="col-6">
+          <form>
+            <h2>Login</h2>
+            <span>Welcome back! Sign in to your account.</span>
+            <div class="field">
+              <label for="email" class="text-900 font-medium mb-3">Username or email address *</label>
+              <input id="email" type="text" class="p-inputtext w-full mb-3">
+          </div>
+            <div class="field">
+              <label for="password" class="text-900 font-medium mb-3">Password *</label>
+              <input id="password" type="password" class="p-inputtext w-full mb-3">
+          </div>
+            <div class="field">
+              <p-checkbox name="checkbox-1" [(ngModel)]="checked" [binary]="true" label="Email me with news and offers" class="text-900" inputId="id"></p-checkbox>
+          </div>
+          <button pButton pRipple type="button" label="Primary" class="p-button-rounded"></button>
+          <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer forgotPassword">Forgot password?</a>
+          </form>
+      </div>
+      <div class="col-6">
+        <form>
+          <h2>Register</h2>
+          <span>Create new account today to reap the benefits of a personalized shopping experience.</span>
+          <div class="field">
+            <label for="email" class="text-900 font-medium mb-3">Email address *</label>
+            <input id="email" type="email" class="p-inputtext w-full mb-3">
+        </div>
+        <div class="field">
+          <label for="password" class="text-900 font-medium mb-3">Password *</label>
+          <input id="password" type="password" class="p-inputtext w-full mb-3">
+      </div>
+        <div class="field">
+          <input type="radio" id="html" name="fav_language">  I am a customer
+      </div>
+        <div class="field">
+          <input type="radio" id="html" name="fav_language">  I am a vendor
+      </div>
+      <div class="field">
+        <p>
+          Your personal data will be used to support your experience throughout this
+          website, to manage access to your account, and for other purposes described
+          in our <a href="">privacy policy.</a>
+        </p>
+      </div>
+      <button pButton pRipple type="button" label="Register" class="p-button-rounded"></button>
+      <div class="field">
+        <h4>Sign up today and you will be able to:</h4>
+        <span><i class="ri-check-line"></i> Speed your way through checkout </span>
+        <span><i class="ri-check-line"></i> Track your order easily </span>
+        <span><i class="ri-check-line"></i> Keep a record of all your purchases</span>
+      </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

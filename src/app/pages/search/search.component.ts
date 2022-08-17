@@ -143,6 +143,12 @@ checked1: boolean = true;
 checked2: boolean = false;
 
 openDropdown: boolean = true;
+price: any[] = [
+  {range: '$10 - $100'},
+  {range: '$101 - $200'},
+  {range: '$201 - $300'},
+  {range: '$301 - $400'},
+];
   constructor() { }
 
   ngOnInit(): void {

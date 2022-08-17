@@ -23,6 +23,15 @@ import {CheckboxModule} from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 import {GalleriaModule} from 'primeng/galleria';
 import {SliderModule} from 'primeng/slider';
+import {MenuModule} from 'primeng/menu';
+import {MultiSelectModule} from 'primeng/multiselect';
+import { LoginComponent } from './pages/login/login.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { CookiePolicyComponent } from './pages/cookie-policy/cookie-policy.component';
+import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { CartComponent } from './pages/cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +39,14 @@ import {SliderModule} from 'primeng/slider';
     ProductSliderComponent,
     FooterComponent,
     ProductComponent,
-    SearchComponent
+    SearchComponent,
+    LoginComponent,
+    ContactComponent,
+    AboutUsComponent,
+    CookiePolicyComponent,
+    TermsConditionsComponent,
+    WishlistComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +66,9 @@ import {SliderModule} from 'primeng/slider';
     CheckboxModule,
     FormsModule,
     GalleriaModule,
-    SliderModule
+    SliderModule,
+    MenuModule,
+    MultiSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
