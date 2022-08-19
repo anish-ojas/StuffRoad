@@ -32,6 +32,20 @@ import { CookiePolicyComponent } from './pages/cookie-policy/cookie-policy.compo
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 import { WishlistComponent } from './pages/wishlist/wishlist.component';
 import { CartComponent } from './pages/cart/cart.component';
+import {DropdownModule} from 'primeng/dropdown';
+import { TrackComponent } from './pages/track/track.component';
+import { VendorRegistrationComponent } from './pages/vendor-registration/vendor-registration.component';
+import { EssentialComponent } from './pages/essential/essential.component';
+import { ErrorComponent } from './pages/error/error.component';
+import {RadioButtonModule} from 'primeng/radiobutton';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import {KeyFilterModule} from 'primeng/keyfilter';
+import {InputNumberModule} from 'primeng/inputnumber';
+import {PasswordModule} from 'primeng/password';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +60,12 @@ import { CartComponent } from './pages/cart/cart.component';
     CookiePolicyComponent,
     TermsConditionsComponent,
     WishlistComponent,
-    CartComponent
+    CartComponent,
+    TrackComponent,
+    VendorRegistrationComponent,
+    EssentialComponent,
+    ErrorComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +88,14 @@ import { CartComponent } from './pages/cart/cart.component';
     SliderModule,
     MenuModule,
     MultiSelectModule,
+    DropdownModule,
+    RadioButtonModule,
+    MessagesModule,
+    MessageModule,
+    KeyFilterModule,
+    InputNumberModule,
+    PasswordModule,
+    InputTextareaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
