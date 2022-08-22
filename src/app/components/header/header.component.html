@@ -71,3 +71,824 @@
         </ul>
     </div>
 </div>
+<div class="surface-overlay px-3 flex align-items-stretch relative"
+  style="min-height: 40px">
+  <a pRipple class="cursor-pointer flex align-items-center lg:hidden text-700
+    mr-3 sm:mr-5" pStyleClass="#nav-1"
+    enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+    <i class="pi pi-bars text-4xl"></i>
+  </a>
+  <div id="nav-1"
+    class="surface-overlay hidden lg:flex absolute lg:static left-0 top-100 z-1
+    shadow-2 lg:shadow-none w-full lg:w-auto py-3 lg:py-0">
+    <ul class="list-none p-0 m-0 flex flex-column lg:flex-row">
+      <li class="flex flex-column lg:flex-row">
+        <a pRipple
+          class="inline-flex align-items-center cursor-pointer border-right-2
+          lg:border-right-none lg:border-bottom-2 border-transparent
+          hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none
+          text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+          pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+          [hideOnOutsideClick]="true">
+          <span>Indoor</span>
+        </a>
+        <div
+          class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute
+          w-full left-0 top-100 pl-8 pr-6 lg:px-6 py-0 lg:py-6">
+          <div class="flex flex-column lg:flex-row lg:justify-content-between">
+            <div>
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden mb-3 select-none">Clothing</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Clothing</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Stone Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Wood & Timber
+                  Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Brick Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Tile Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Shera Sheet
+                  (Fibre Cement Board)</li>
+                <li class="mb-3 cursor-pointer hover:text-900">ACP Sheets</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Vinyl Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Concrete Cladding</li>
+              </ul>
+
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden mb-3 select-none">Flooring</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Flooring</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Vinyl Carpet</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Wooden Flooring</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Vinyl Flooring</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Epoxy</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Tile Cladding</li>
+                <li class="mb-3 cursor-pointer hover:text-900">PVC Flooring</li>
+              </ul>
+
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden mb-3 select-none">Tiles</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Tiles</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Mosaic</li>
+                <li class="mb-3 cursor-pointer hover:text-900">3D Tiles</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Bathroom Tiles</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Ceramic Tiles</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Digital Tiles</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Floor Tiles</li>
+              </ul>
+            </div>
+            <div>
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden mb-3 select-none">Furniture Boards</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Furniture
+                  Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Plywoods</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Fibre Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Cement Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Gypsum Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Composite Woods</li>
+                <li class="mb-3 cursor-pointer hover:text-900">HDF</li>
+                <li class="mb-3 cursor-pointer hover:text-900">MDF</li>
+                <li class="mb-3 cursor-pointer hover:text-900">PVC Sheets</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Block Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Foam Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Fiber Board</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Hard Board</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Particle Boards</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Moisture-resitant
+                  Praticleboard</li>
+              </ul>
+
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden mb-3 select-none">Hardware</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Hardware</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Glass
+                  Architectural Hardware</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Aluminium
+                  Profiles</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Door Control</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Nats & Bolts</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Furniture Fitting</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Sliding Solutions</li>
+              </ul>
+            </div>
+            <div>
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden
+                mb-3 select-none">Laminates</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Color Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">High Gloss
+                  Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Matte Finish
+                  Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">PVC Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Stone Textures
+                  Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Textured
+                  Laminates</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Veneer Laminates</li>
+              </ul>
+
+              <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                class="font-medium text-700 text-lg cursor-pointer block
+                lg:hidden
+                mb-3 select-none">Sanitary ware</a>
+              <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                lg:block">
+                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Sanitary
+                  ware</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Basins</li>
+                <li class="mb-3 cursor-pointer hover:text-900">Bathroom
+                  Accessories/li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Bathroom
+                    Fitting Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Bathroom
+                    Furniture</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Bathtubs</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Faucets</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Showers</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sink</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Closets</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Urinals</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Veeners</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Veeners</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Natural wood &
+                    Composite Veneer</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Backed &
+                    Un-Backed
+                    Veener Faces</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sequenced Or
+                    Numbered Architectural Panels</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Pre-Finished
+                    Veener</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Other Specialty
+                    Veeners</li>
+                </ul>
+
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Switches</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Switches</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Ceiling</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Ceiling</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Gypsum Board</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">POP Ceiling</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">PVC Ceiling</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Armstrong Panel</li>
+                </ul>
+
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Marbles & granite</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Marbles
+                    & granite</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Granite</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Marbles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sandstone</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Onyx Stone</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Electrical</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Electrical</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plug and Socket</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wiring
+                    Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sockets &
+                    Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Switches</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plastic Surface
+                    Box</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Metal Box</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Plumbing</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Plumbing</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plumbing Pipes
+                    & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Surface
+                    Drainage System</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Cable
+                    Protection</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sewerage
+                    Drainage Pipes Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Industrial
+                    Pipes & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Fire Sprinklers
+                    Pipe & Fitting</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Insulation
+                    Tubes</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+        </li>
+        <li class="flex flex-column lg:flex-row">
+          <a pRipple
+            class="inline-flex align-items-center cursor-pointer border-right-2
+            lg:border-right-none lg:border-bottom-2 border-transparent
+            hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none
+            text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+            pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+            [hideOnOutsideClick]="true">
+            <span>Outdoor</span>
+          </a>
+          <div
+            class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute
+            w-full left-0 top-100 pl-8 pr-6 lg:px-6 py-0 lg:py-6">
+            <div class="flex flex-column lg:flex-row
+              lg:justify-content-between">
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Cladding</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Cladding</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Stone Cladding</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wood & Timber
+                    Cladding</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Brick Cladding</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Tile Cladding</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Shera Sheet
+                    (Fibre Cement Board)</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">ACP Sheets</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Vinyl Cladding</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Concrete
+                    Cladding</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Marbles</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Marbles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Granite</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Marbles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sandstone</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Onyx Stone</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Paver Blocks & Pabbles</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Paver
+                    Blocks & Pabbles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Chequered Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Chips & Pabbles</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Paver & Pebbles</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Paver
+                    & Pebbles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Brick Pavers</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Rubber Pavers</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Concrete Pavers</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Kerbstones</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Flagstones</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Cobbles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Chips & Pebbles</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Tiles</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Mosaic</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">3D Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Bathroom Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Ceramic Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Digital Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Floor Tiles</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Flooring</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Flooring</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Epoxy</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">PVC Flooring</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Vinyl Carpet</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Vinyl Flooring</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wooden Flooring</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Roofing</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Roofing</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Shingles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Corrugated
+                    Roofing Sheets</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Roof Tiles</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Metal Roofing
+                    Sheet</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Polycarbonate
+                    roofing sheets</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plastic roofing
+                    sheets</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Electrical</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Electrical</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plug and Socket</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wiring
+                    Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sockets &
+                    Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Switches</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plastic Surface
+                    Box</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Metal Box</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Plumbing</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Plumbing</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plumbing Pipes
+                    & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Surface
+                    Drainage System</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Cable
+                    Protection</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sewerage
+                    Drainage Pipes Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Industrial
+                    Pipes & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Fire Sprinklers
+                    Pipes & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Insulation
+                    Tubes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-column lg:flex-row">
+          <a pRipple
+            class="inline-flex align-items-center cursor-pointer border-right-2
+            lg:border-right-none lg:border-bottom-2 border-transparent
+            hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none
+            text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+            pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+            [hideOnOutsideClick]="true">
+            <span>Interior Decor</span>
+          </a>
+          <div
+            class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute
+            w-full left-0 top-100 pl-8 pr-6 lg:px-6 py-0 lg:py-6">
+            <div class="flex flex-column lg:flex-row
+              lg:justify-content-between">
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Artifacts</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Artifacts</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wall Accents</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wall Art</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Showpieces</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Spiritual</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Indoor Plants</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Blouses</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Corian</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Corian</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Wallpaper</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Wallpaper</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Charcoal Sheet</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Charcoal
+                    Sheet</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Curtains</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Curtains</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Pebbles</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Pebbles</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Home Furnishing</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Home
+                    Furnishing</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Fabrics</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Curtains</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Carpets</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sofa Cushion
+                    Foam</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Ortho Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Foam Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Coir Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Spring Mattress</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Laminates</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Laminates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Color Laminates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">High Gloss
+                    Laminates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Matte Finish
+                    Laminates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">PVC Laminates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Stone Textures
+                    Laminates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Textured
+                    Lamintes</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Veneer
+                    Laminates</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Lights</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Lights</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Lamps</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wall Lights</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Ceiling Lights</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Outdoor Lights</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Festive Lights</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Mattress</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Coir
+                    Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Foam Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Ortho Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Spring Mattress</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Mattress
+                    Mattress</li>
+                </ul>
+
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Carpets</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Carpets</li>
+                </ul>
+              </div>
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Veeners</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Veeners</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Natural wood &
+                    Composite Veneer</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Backed &
+                    Un-Backed Veneer Faces</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sequenced Or
+                    Numbered Architectural Panels</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Pre-Finished
+                    Veneer</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Other Specialty
+                    Veneers</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Wallpapers</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Wallpapers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-column lg:flex-row">
+          <a pRipple
+            class="inline-flex align-items-center cursor-pointer border-right-2
+            lg:border-right-none lg:border-bottom-2 border-transparent
+            hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none
+            text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+            pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+            [hideOnOutsideClick]="true">
+            <span>Essentials</span>
+          </a>
+          <div
+            class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute
+            w-full left-0 top-100 pl-8 pr-6 lg:px-6 py-0 lg:py-6">
+            <div class="flex flex-column lg:flex-row
+              lg:justify-content-between">
+
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Adhesive</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Adhesive</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wood Glue</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Hot Glue</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Glue Stick</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Superglue</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Epoxy</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Tapes</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Steel</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Steel</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plain Carbon
+                    Steel or Mild Steel</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Rebar Steel</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Structural
+                    Steel</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Steel Pipes</li>
+                </ul>
+              </div>
+
+                <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Chemicals</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Chemicals</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Waterproofing
+                    chemicals</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Grouting
+                    chemicals</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Admixtures</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Surface
+                    Hardeners</li>
+
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Plumbing</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Plumbing</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plumbing Pipes
+                    & Fittings </li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Surface
+                    Drainage System</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Cable
+                    Protection</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Sewerage
+                    Drainage Pipes Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Industrial
+                    Pipes & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Fire Sprinklers
+                    Pipes & Fittings</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Insulation
+                    Tubes</li>
+
+
+                </ul>
+              </div>
+
+              <div>
+
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Glass & Acrylic</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Glass
+                    & Acrylic</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Acrylic Sheet</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Float Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Shatterproof
+                    glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Laminated Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Extra Clean
+                    Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Chromatic Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Tinted Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Toughened Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Glass Blocks</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">GLass Wool</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Tinted Glass</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Insulated
+                    Glazed Units</li>
+
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Cement & Gypsum</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Cement
+                    & Gypsum</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Paints</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Paints</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Cement paints</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Distemper</li>
+                </ul>
+              </div>
+
+              <div>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Electrical</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Electrical</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plug and Socket</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wiring
+                    Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Scokets &
+                    Accessories</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Switches</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plates</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Plastic Surface
+                    Box</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Metal Box</li>
+                </ul>
+                <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                  class="font-medium text-700 text-lg cursor-pointer block
+                  lg:hidden
+                  mb-3 select-none">Flooring</a>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden
+                  lg:block">
+                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Flooring</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Vinyl Carpet</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Wooden-Flooring</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Vinyl-Flooring</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Epoxy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-column lg:flex-row">
+          <a pRipple
+            class="inline-flex align-items-center cursor-pointer border-right-2
+            lg:border-right-none lg:border-bottom-2 border-transparent
+            hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none
+            text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+            pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+            [hideOnOutsideClick]="true">
+            <span>Professionals</span>
+          </a>
+          <div
+            class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute
+            w-full left-0 top-100 pl-8 pr-6 lg:px-6 py-0 lg:py-6">
+            <div class="flex flex-column lg:flex-row
+              lg:justify-content-between">
+              <div>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700">
+                  <li class="mb-3 cursor-pointer hover:text-900">Architects</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Interior Designers</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">3D Designers</li>
+                </ul>
+              </div>
+              <div>
+                <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700">
+                  <li class="mb-3 cursor-pointer hover:text-900">Contractors</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Builders</li>
+                  <li class="mb-3 cursor-pointer hover:text-900">Structural Designers</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
