@@ -45,6 +45,7 @@ import {KeyFilterModule} from 'primeng/keyfilter';
 import {InputNumberModule} from 'primeng/inputnumber';
 import {PasswordModule} from 'primeng/password';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {StepsModule} from 'primeng/steps';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     VendorRegistrationComponent,
     EssentialComponent,
     ErrorComponent,
-    CheckoutComponent
+    CheckoutComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -96,6 +98,7 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     InputNumberModule,
     PasswordModule,
     InputTextareaModule,
+    StepsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
