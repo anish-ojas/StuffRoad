@@ -2,51 +2,72 @@
   <div class="vendorRegistration">
     <div class="grid">
       <div class="col-12">
+        <ol class="flex list-none m-0 pt-0 px-0 align-items-center text-sm
+          text-600 overflow-x-auto">
+          <li class="mr-2">Home</li>
+          <li class="mr-2 inline-flex align-items-center"><i class="pi
+              pi-angle-right text-sm"></i></li>
+          <li class="mr-2">Vendor Registration</li>
+        </ol>
+      </div>
+      <div class="col-12">
 
-        <div class="p-2">
-          <div class="text-900 font-medium text-xl mb-3">Vendor Registration</div>
-          <div class="p-4 p-fluid">
-            <div class="grid formgrid p-fluid">
-              <div class="field mb-4 col-12">
-                <div class="col-6">
-                  <label for="company_name" class="font-medium text-900">Select Your Profession (required)</label>
-    <p-dropdown [options]="profession" [(ngModel)]="selectProf" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
-                </div>
-              </div>
-              <div class="field mb-4 col-12">
-                <div class="col-6">
-                  <label for="company_name" class="font-medium text-900">Your Name (Required)</label>
-                  <input id="company_name" type="text" pInputText>
-                </div>
-              </div>
-              <div class="field mb-4 col-12">
-                <div class="col-6">
-                  <label for="invoice_id" class="font-medium text-900">Your Email (Required)</label>
-                  <input id="invoice_id" type="text" pInputText>
-                </div>
-              </div>
-              <div class="field mb-4 col-12">
-                <div class="col-6">
-                  <label for="customer_name" class="font-medium text-900">Mobile No (Required)</label>
-                  <input id="customer_name" type="text" pInputText>
-                </div>
-              </div>
-              <div class="field mb-4 col-12">
-                <div class="col-6">
-                  <label for="customer_email" class="font-medium text-900">Your Shop</label>
-                  <input id="customer_email" type="text" pInputText>
-                </div>
-              </div>
-              <div class="field mb-4 col-12">
-                <div class="col-6">
-                  <label for="customer_email" class="font-medium text-900">Your Brand</label>
-                  <input id="customer_email" type="text" pInputText>
-                </div>
+        <div class="text-900 font-medium text-xl mb-3 text-center">Vendor
+          Registration</div>
+        <div class="p-fluid">
+          <div class="grid formgrid p-fluid">
+            <div class="field mb-4 col-12">
+              <div class="lg:col-6 col-12">
+                <label for="company_name" class="font-medium text-900">Select
+                  Your Profession (required)</label>
+                <p-dropdown [options]="profession" [(ngModel)]="selectProf"
+                  placeholder="Select a City" optionLabel="name"
+                  [showClear]="true"></p-dropdown>
               </div>
             </div>
-            <button pButton pRipple label="Send" class="w-auto"></button>
+            <div class="field mb-4 col-12">
+              <div class="lg:col-6 col-12">
+                <label for="company_name" class="font-medium text-900">Your Name
+                  (Required)</label>
+                <input id="company_name" type="text" pInputText>
+              </div>
+            </div>
+            <div class="field mb-4 col-12">
+              <div class="lg:col-6 col-12">
+                <label for="invoice_id" class="font-medium text-900">Your Email
+                  (Required)</label>
+                <input id="invoice_id" type="text" pInputText>
+              </div>
+            </div>
+            <div class="field mb-4 col-12">
+              <div class="lg:col-6 col-12">
+                <label for="customer_name" class="font-medium text-900">Mobile
+                  No (Required)</label>
+                <input id="customer_name" type="text" pInputText>
+              </div>
+            </div>
+            <div class="field mb-4 col-12">
+              <div class="lg:col-6 col-12">
+                <label for="customer_email" class="font-medium text-900">Your
+                  Shop</label>
+                <input id="customer_email" type="text" pInputText>
+              </div>
+            </div>
+            <div class="field mb-4 col-12">
+              <div class="lg:col-6 col-12">
+                <label for="customer_email" class="font-medium text-900">Your
+                  Brand</label>
+                <input id="customer_email" type="text" pInputText>
+              </div>
+            </div>
+          </div>
+          <div class="field mb-4 col-12">
+            <div class="lg:col-6 col-12">
+              <button pButton pRipple label="Send" class="w-auto"></button>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>

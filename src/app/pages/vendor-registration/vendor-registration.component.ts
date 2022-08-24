@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class VendorRegistrationComponent implements OnInit {
   profession:any;
   selectProf:any;
+  items: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +19,23 @@ export class VendorRegistrationComponent implements OnInit {
       {name: 'Istanbul', code: 'IST'},
       {name: 'Paris', code: 'PRS'}
     ]
+    this.items = [{
+      label: 'Personal',
+      routerLink: 'personal'
+  },
+  {
+      label: 'Seat',
+      routerLink: 'seat'
+  },
+  {
+      label: 'Payment',
+      routerLink: 'payment'
+  },
+  {
+      label: 'Confirmation',
+      routerLink: 'confirmation'
+  }
+];
   }
 
 }
